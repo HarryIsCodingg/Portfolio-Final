@@ -1,0 +1,22 @@
+name: testing node deployment
+
+on: [push]
+
+jobs:
+  copying code to the runner and testing
+    runs-on: ubuntu-latest
+    steps:
+      - name: list files before using the actions/checkout
+        run: |
+          pwd 
+          ls -all
+          echo "----------------------------------------------------------"
+
+      - name: Run the actions/checkout
+        uses: actions/checkout@v1
+
+      - name: List files after using actions/checkout
+        run: | 
+          pwd
+          ls -all
+          
