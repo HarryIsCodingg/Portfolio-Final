@@ -3,7 +3,7 @@ name: testing node deployment
 on: [push]
 
 jobs:
-  copying code to the runner and testing
+  copying code to the runner and testing:
     runs-on: ubuntu-latest
     steps:
       - name: list files before using the actions/checkout
